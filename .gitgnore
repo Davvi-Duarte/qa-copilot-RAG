@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Virtual env
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Data (se você não quiser versionar seus .txt)
+data/*
+!data/README.md
+!data/.gitkeep
+
+# Vector DB / indices
+db/
+chroma/
+faiss_index/
+*.index
+*.faiss
+
+# Secrets
+.env
+*.key
