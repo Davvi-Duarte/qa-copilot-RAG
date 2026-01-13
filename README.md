@@ -24,14 +24,24 @@ Explorar e implementar técnicas modernas de IA aplicada para apoiar atividades 
 
 qa-copilot
 ├── data
-│ └── docs # Arquivos .txt (artefatos de QA)
+
+│ 
+└── docs # Arquivos .txt (artefatos de QA)
+
 ├── src
+
 │ ├── ingestion
+
 │ ├── embeddings
+
 │ ├── retrieval
+
 │ └── generation
+
 ├── db # Banco vetorial (não versionado)
+
 ├── main.py
+
 └── README.md
 
 
