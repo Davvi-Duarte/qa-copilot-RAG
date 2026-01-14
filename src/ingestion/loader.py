@@ -16,5 +16,8 @@ def load_documents(path):
         if (not text):
             print(f"Warning: The document {doc} is empty and will be skipped.") 
         else:
-            content.append(text)
+            metadata_document = {"id": str(doc.stem),
+                                 "source" : str(doc),
+                                 "text" : text}
+            content.append(metadata_document)
     return content
