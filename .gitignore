@@ -1,0 +1,24 @@
+# env
+.env
+
+# venv
+.venv/
+venv/
+
+# python
+__pycache__/
+*.py[cod]
+
+# notebooks
+.ipynb_checkpoints/
+
+# vector db / artifacts
+db/
+chroma/
+*.faiss
+*.index
+
+# editor
+.vscode/
+.idea/
+*.swp
