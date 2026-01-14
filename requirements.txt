@@ -1,0 +1,20 @@
+# Core
+python-dotenv
+tqdm
+numpy
+
+# LangChain (atual)
+langchain
+langchain-core
+langchain-community
+
+# Gemini
+langchain-google-genai
+google-genai
+
+# Vector store (local)
+chromadb
+
+# Embeddings locais (recomendado para economizar)
+sentence-transformers
+transformers

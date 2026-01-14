@@ -1,0 +1,33 @@
+TITULO: Cadastro de Novo Usuario com Validacao de Dados
+
+CONTEXTO: Como um novo usuario, desejo criar uma conta informando meu nome, e-mail e senha, para que eu possa ter um registro unico e seguro de acesso ao sistema.
+
+REGRAS DE NEGOCIO:
+
+    O e-mail informado deve ser unico na base de dados; nao deve ser permitido o cadastro de um endereco ja existente.
+
+    A senha deve atender a requisitos de complexidade para garantir a seguranca (ex: minimo de 8 caracteres contendo letras e numeros).
+
+    O campo de e-mail deve validar o formato padrao de endereco (texto@dominio.com).
+
+    Todos os campos (nome, e-mail e senha) sao de preenchimento obrigatorio.
+
+    O campo de nome nao deve permitir apenas caracteres especiais ou numeros.
+
+CRITERIOS DE ACEITE:
+
+    Dado que preencho todos os campos com dados validos e um e-mail inedito, ao submeter, o cadastro deve ser realizado com sucesso.
+
+    Dado que tento me cadastrar com um e-mail ja registrado no sistema, ao submeter, devo receber uma mensagem informando que o e-mail ja esta em uso.
+
+    Dado que informo uma senha que nao atende aos criterios de complexidade definidos, o sistema deve impedir o cadastro e exibir as regras de senha exigidas.
+
+    Dado que deixo qualquer campo em branco, ao tentar submeter, o sistema deve exibir mensagens de alerta indicando a obrigatoriedade dos campos.
+
+    Dado que insiro um e-mail com formato invalido, o sistema deve impedir o cadastro e solicitar a correcao do formato.
+
+RESTRICOES:
+
+    A senha deve ser exibida mascarada (asteriscos ou pontos) durante a digitacao para privacidade visual.
+
+    A senha nao deve ser armazenada em texto plano no banco de dados (requisito de backend).

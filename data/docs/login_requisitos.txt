@@ -1,0 +1,29 @@
+TITULO: Login de Usuario com Credenciais de E-mail e Senha
+
+CONTEXTO: Como usuario do sistema, preciso inserir meu e-mail e senha em uma interface de autenticacao para que eu possa acessar minha conta de forma segura e visualizar as funcionalidades restritas.
+
+REGRAS DE NEGOCIO:
+
+    O acesso so deve ser concedido se o e-mail e a senha informados coincidirem exatamente com um registro ativo na base de dados.
+
+    O sistema deve validar se o texto inserido no campo de e-mail possui um formato valido (ex: texto@dominio.com).
+
+    Ambos os campos, e-mail e senha, sao de preenchimento obrigatorio.
+
+    Por questoes de seguranca, a mensagem de erro para credenciais incorretas deve ser generica, nao informando se o erro esta no e-mail ou na senha.
+
+CRITERIOS DE ACEITE:
+
+    Dado que informo um e-mail e senha validos, ao confirmar, devo ser autenticado e redirecionado para a area logada.
+
+    Dado que informo um e-mail nao cadastrado e uma senha qualquer, ao confirmar, devo visualizar uma mensagem de erro generica (ex: "Usuario ou senha invalidos").
+
+    Dado que informo um e-mail cadastrado e uma senha incorreta, ao confirmar, devo visualizar a mesma mensagem de erro generica (ex: "Usuario ou senha invalidos").
+
+    Dado que tento realizar o login deixando o campo e-mail ou o campo senha em branco, devo visualizar uma mensagem de alerta informando que os campos sao obrigatorios.
+
+    Dado que insiro um e-mail com formato invalido (ex: "usuario.com" sem o arroba), o sistema deve impedir o envio e informar que o formato do e-mail e invalido.
+
+RESTRICOES:
+
+    O campo de senha deve ocultar os caracteres digitados (mascaramento) para privacidade visual.
